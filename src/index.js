@@ -60,7 +60,7 @@ function getRandomEmoji() {
         '✨', // Sparkles
         '🐛', // Bug
         '📇', // Card Index
-        '♻',  // ️Black Universal Recycling Symbol
+        '♻ ', // ️Black Universal Recycling Symbol
         '📚', // Books
         '🌐', // Globe With Meridians
         '🐎', // Horse
@@ -113,7 +113,7 @@ module.exports = {
     addEmoji: function(filePath) {
         fs.readFile(filePath, 'utf8', (err, commitMessage) => {
             if(!/^Merge/.test(commitMessage)) {
-                commitMessage = getRandomEmoji() + '  ' + commitMessage;
+                commitMessage = getRandomEmoji() + ' ' + commitMessage;
             }
 
             fs.writeFile(filePath, commitMessage, (err) => {
