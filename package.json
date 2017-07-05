@@ -1,0 +1,44 @@
+{
+  "name": "magik-moji",
+  "version": "0.0.0",
+  "description": "Automagically add a random emoji to the git commit message",
+  "main": "./src/index.js",
+  "scripts": {
+    "postinstall": "node ./src/bin/install.js",
+    "preuninstall": "node ./src/bin/uninstall.js",
+    "test": "eslint ./src"
+  },
+  "keywords": [
+    "commit",
+    "commit message",
+    "emoji",
+    "git",
+    "githook",
+    "githooks",
+    "hook",
+    "hooks",
+    "magikMaker",
+    "utf8",
+    "utf-8"
+  ],
+  "homepage": "https://github.com/magikMaker/magik-moji",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:magikMaker/magik-moji.git"
+  },
+  "bugs": {
+    "url": "https://github.com/magikMaker/magik-moji/issues"
+  },
+  "author": "Bjørn Wikkeling",
+  "license": "MIT",
+  "dependencies": {
+    "magik-hooks": "*"
+  },
+  "devDependencies": {
+    "eslint": "^4.1.1"
+  },
+  "engines": {
+    "node": ">=5.0.0",
+    "npm": ">= 3.0.0"
+  }
+}
