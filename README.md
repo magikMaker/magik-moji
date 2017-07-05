@@ -1,3 +1,26 @@
+magik-moji
+============
+Adds a random Emoji to the git commit message
+
+Current version
+---------------
+Right now one of the following emoji is added, in future version many more 
+emoji will be available
+🚀 > rocket
+🎉 > Party Popper
+🔖 > Bookmark
+✨ > Sparkles
+🐛 > Bug
+📇 > Card Index
+♻  > ️Black Universal Recycling Symbol
+📚 > Books
+🌐 > Globe With Meridians
+🐎 > Horse
+💄 > Lipstick
+🔧 > Wrench
+🚨 > Police Cars Revolving Light
+💩 > Pile of Poo
+🚧 // Construction Sign
 
 Windows
 git branch | findstr *
