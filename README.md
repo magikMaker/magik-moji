@@ -22,61 +22,24 @@ emoji will be available
 💩 > Pile of Poo
 🚧 // Construction Sign
 
-Windows
-git branch | findstr *
-https://blogs.msdn.microsoft.com/zainnab/2007/07/08/grep-and-sed-with-powershell/
-https://www.howtogeek.com/261591/how-to-create-and-run-bash-shell-scripts-on-windows-10/
-
-
-magik-commit
-============
-[![NPM version](https://badge.fury.io/js/magik-commit.svg)](http://badge.fury.io/js/magik-commit)
-
-Automagically adds the Jira ticket ID to the commit message. A Jira issue ID 
-has the following format `JIRA-42`. So it starts with capital letters followed 
-by a dash and then a number, for instance `XXX-42`. 
-
-This script parses the ticket ID from the Git branch name from the currently
-active branch. Examples of possible branch names, assuming ticket ID is `JIRA-42`.
-- JIRA-42
-- JIRA-42-description-here
-- feature/JIRA-42
-- feature/JIRA-42-description-here
-- feature-JIRA-42
-- feature-JIRA-42-description-here
-- feature_JIRA-42
-- feature_JIRA-42_description_here
-
-The recommended format is: `feature/JIRA-42-description-here`.
-
-To easily get the Jira Ticket ID in the branch name, use the 'create branch' 
-link on the ticket's details page. This link is available after integrating
-Bitbucket with Jira. For more information, see the [Bitbucket documentation](https://confluence.atlassian.com/bitbucketserver/jira-integration-776639874.html).
-
 Installation
 ------------
 Install this in your project like this:
 ```bash
-$ npm install --save-dev magik-commit
+$ npm install --save-dev magik-moji
 ```
 
 Usage
 -----
-After installation the Git commit messages you create are automagically 
-augmented with the Jira ticket ID.
+After installation all Git commit messages will be prepended with a random emoji
 
 Uninstall
 ---------
 To uninstall, simply type this on the command line:
 ```bash
-$ npm uninstall --save-dev magik-commit
+$ npm uninstall --save-dev magik-moji
 ```
 
-Windows
--------
-Please note that this package only runs on macOS and BSD/*nix type systems. If
-you would like to run this on an unsupported OS, please 
-[create a ticket](https://github.com/magikMaker/magik-commit/issues).
 
 License
 =======
