@@ -6,6 +6,7 @@ Current version
 ---------------
 Right now one of the following emoji is added, in future version many more 
 emoji will be available
+  
 🚀 > rocket  
 🎉 > Party Popper  
 🔖 > Bookmark  
@@ -20,7 +21,7 @@ emoji will be available
 🔧 > Wrench  
 🚨 > Police Cars Revolving Light  
 💩 > Pile of Poo  
-🚧 // Construction Sign  
+🚧 > Construction Sign  
 
 Installation
 ------------
