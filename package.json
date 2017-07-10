@@ -5,8 +5,9 @@
   "main": "./src/index.js",
   "scripts": {
     "postinstall": "node ./src/bin/install.js",
+    "lint": "eslint ./src",
     "preuninstall": "node ./src/bin/uninstall.js",
-    "test": "eslint ./src"
+    "test": "yarn lint"
   },
   "keywords": [
     "commit",
