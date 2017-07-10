@@ -68,7 +68,41 @@ function getRandomEmoji() {
         '🔧', // Wrench
         '🚨', // Police Cars Revolving Light
         '💩', // Pile of Poo
-        '🚧' // Construction Sign
+        '🚧', // Construction Sign
+        '🎨',
+        '📰',
+        '📝',
+        '🚑',
+        '🐧',
+        '🍎',
+        '🏁',
+        '🔥',
+        '🚜',
+        '🎨',
+        '☔️',
+        '🔬',
+        '💚',
+        '🔒',
+        '⬆️',
+        '⬇️',
+        '⏩',
+        '⏪',
+        '👕',
+        '♿️',
+        '💎',
+        '🔈',
+        '🔇',
+        '⚡️',
+        '💡',
+        '❄️',
+        '🐧',
+        '🎀',
+        '🐘',
+        '🐬',
+        '🍃',
+        '🏦',
+        '🐳',
+        '🤝'
     ];
     return emojis[Math.floor(Math.random() * emojis.length)];
 }
@@ -116,9 +150,12 @@ module.exports = {
                 commitMessage = getRandomEmoji() + ' ' + commitMessage;
             }
 
-            fs.writeFile(filePath, commitMessage, (err) => {
+            fs.writeFile(filePath, commitMessage, err => {
                 if(err){
+                    /* eslint-disable no-console */
                     console.error(err);
+                    /* eslint-disable no-console */
+
                     process.exitCode = 1;
                 } else{
                     process.exit(0);
