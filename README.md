@@ -7,21 +7,55 @@ Current version
 Right now one of the following emoji is added, in future version many more 
 emoji will be available
   
-🚀 > rocket  
-🎉 > Party Popper  
-🔖 > Bookmark  
-✨ > Sparkles  
-🐛 > Bug  
-📇 > Card Index  
-♻  > ️Black Universal Recycling Symbol  
-📚 > Books  
-🌐 > Globe With Meridians  
-🐎 > Horse  
-💄 > Lipstick  
-🔧 > Wrench  
-🚨 > Police Cars Revolving Light  
-💩 > Pile of Poo  
-🚧 > Construction Sign  
+🚀  rocket  
+🎉  Party Popper  
+🔖  Bookmark  
+✨  Sparkles  
+🐛  Bug  
+📇  Card Index  
+♻   ️Black Universal Recycling Symbol  
+📚  Books  
+🌐  Globe With Meridians  
+🐎  Horse  
+💄  Lipstick  
+🔧  Wrench  
+🚨  Police Cars Revolving Light  
+💩  Pile of Poo  
+🚧  Construction Sign  
+🎨
+📰
+📝
+🚑
+🐧
+🍎
+🏁
+🔥
+🚜
+🎨
+☔️
+🔬
+💚
+🔒
+⬆️
+⬇️
+⏩
+⏪
+👕
+♿️
+💎
+🔈
+🔇
+⚡️
+💡
+❄️
+🐧
+🎀
+🐘
+🐬
+🍃
+🏦
+🐳
+🤝
 
 Installation
 ------------
@@ -45,7 +79,7 @@ $ npm uninstall --save-dev magik-moji
 License
 =======
 
-Copyright (C) 2016 Bjørn Wikkeling (magikMaker)
+Copyright (C) 2017 Bjørn Wikkeling (magikMaker)
 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of 
