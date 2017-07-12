@@ -48,7 +48,6 @@ emoji will be available
 ⚡️
 💡
 ❄️
-🐧
 🎀
 🐘
 🐬
