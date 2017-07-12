@@ -146,7 +146,7 @@ module.exports = {
     addEmoji: function(filePath) {
         fs.readFile(filePath, 'utf8', (err, commitMessage) => {
             if(!/^Merge/.test(commitMessage)) {
-                commitMessage = getRandomEmoji() + ' ' + commitMessage;
+                commitMessage = getRandomEmoji() + '  ' + commitMessage;
             }
 
             fs.writeFile(filePath, commitMessage, err => {
