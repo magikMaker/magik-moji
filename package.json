@@ -1,6 +1,6 @@
 {
   "name": "magik-moji",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Automagically add a random emoji to the git commit message",
   "main": "./src/index.js",
   "scripts": {
