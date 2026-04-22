@@ -1,31 +1,57 @@
 {
   "name": "magik-moji",
-  "version": "0.0.7",
-  "description": "Automagically add a random emoji to the git commit message",
-  "main": "./src/index.js",
+  "version": "1.0.1",
+  "description": "Automagically prepend a random emoji to every git commit message",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": "dist/bin/cli.js",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
   "scripts": {
-    "postinstall": "node ./src/bin/install.js",
-    "lint": "eslint ./src",
-    "preuninstall": "node ./src/bin/uninstall.js",
-    "test": "yarn lint"
+    "build": "yarn clean && tsup",
+    "clean": "rimraf dist coverage",
+    "lint": "eslint src",
+    "test": "jest",
+    "postinstall": "node ./dist/bin/install.js || true",
+    "preuninstall": "node ./dist/bin/uninstall.js || true",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn lint && yarn test && yarn build",
+    "pre-commit": "yarn lint && yarn test",
+    "release": "node ./scripts/release-github.mjs"
   },
   "keywords": [
     "commit",
     "commit message",
     "emoji",
     "git",
+    "git-hook",
     "githook",
     "githooks",
+    "gitmoji",
     "hook",
     "hooks",
     "magikMaker",
+    "prepare-commit-msg",
     "utf8",
     "utf-8"
   ],
   "homepage": "https://github.com/magikMaker/magik-moji",
   "repository": {
     "type": "git",
-    "url": "git@github.com:magikMaker/magik-moji.git"
+    "url": "git+https://github.com/magikMaker/magik-moji.git"
   },
   "bugs": {
     "url": "https://github.com/magikMaker/magik-moji/issues"
@@ -33,13 +59,26 @@
   "author": "Bjørn Wikkeling",
   "license": "MIT",
   "dependencies": {
+    "barva": "^1.2.0",
     "magik-hooks": "*"
   },
   "devDependencies": {
-    "eslint": "^4.1.1"
+    "@eslint/js": "^9.33.0",
+    "@octokit/rest": "^22.0.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.3.0",
+    "eslint": "^9.33.0",
+    "globals": "^16.3.0",
+    "jest": "^30.0.5",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.4.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.39.1"
   },
   "engines": {
-    "node": ">=5.0.0",
-    "npm": ">= 3.0.0"
-  }
+    "node": ">=18"
+  },
+  "packageManager": "yarn@4.8.1",
+  "sideEffects": false
 }
